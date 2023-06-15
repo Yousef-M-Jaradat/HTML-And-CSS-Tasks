@@ -1,0 +1,11 @@
+if you write new repo :
+1- creat new repo
+2- open C://
+3- open git bash
+4- git clone URL
+5- git add .
+6- git commit -m "enter your comment"
+7- git push origin main
+if you want to add new update just follow up step 5 , 6 , 7
+
+**************************************************************
