@@ -1,0 +1,23 @@
+#field1,#leg1 {
+    font:rgb(92, 34, 151); color: aquamarine;
+    background-image: url(pexels-pixabay-235985.jpg);
+}
+
+
+#field2, #leg2{
+    font:rgb(92, 34, 151); color: azure ;
+    background-image: url(istockphoto-1169630303-170667a.webp);
+}
+
+
+#text1{
+    border: dotted;
+    border-radius: 100px;
+}
+
+.button{background-color: tomato;
+       border-right-color: aliceblue;
+       border-left-color: blue;
+       border-color: gold black;
+       border-radius: 30px;
+    }
