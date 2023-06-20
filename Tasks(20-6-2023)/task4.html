@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4.html</title>
+    <style>
+        .div1{
+            position: relative;
+            border: dotted;
+            width: 492px; height:100px;
+            margin: 30px 30px 80px 30px;
+        }
+        .div2{
+            position: relative;
+            border: dotted;
+            width: 368px; height:100px;
+            margin: 30px 30px 80px 30px;
+        }
+        .reddiv{
+            display: inline-block;
+            background-color: red;
+            width: 120px; height: 100px;
+        }
+        .greendiv{
+            display: inline-block;
+            background-color: green;
+            width: 120px; height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="reddiv">One</div>
+        <div class="greendiv">Two</div>
+        <div class="reddiv">Three</div>
+        <div class="reddiv">Four</div>
+    </div>
+    <div class="div1">
+        <div class="reddiv" style="position: static";>One</div>
+        <div class="greendiv" style="position: static; top: 20px;left: 150px;">Two</div>
+        <div class="reddiv"  style="position: static;">Three</div>
+        <div class="reddiv"  style="position: static">Four</div>
+    </div>
+    <div class="div2">
+        <div class="reddiv">One</div>
+        <div class="greendiv">Two</div>
+        <div class="reddiv">Three</div>
+        <div class="reddiv">Four</div>
+    </div>
+</body>
+</html>

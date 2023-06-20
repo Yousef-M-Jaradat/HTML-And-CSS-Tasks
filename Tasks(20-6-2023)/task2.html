@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        div{
+            position: relative;
+        }
+        .div1,.div2,.div3{
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+            border:1px solid;
+            width: 250px;
+            height: 650px;
+        }
+        .div4,.div5{
+            background-color:rgb(79, 76, 76);
+            position: absolute;
+            bottom: 0px;
+            padding: 10px;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 250px;
+        }
+        .p1{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="div1">
+            <h1>A short heading</h1>
+            <img src="/Tasks(20-6-2023)/images/1.PNG" alt="image">
+            <p class="p1">The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</p>
+        </div>
+        <div class="div2" style="position: absolute;left: 270px;">
+            <h1>A short heading</h1>
+            <img src="/Tasks(20-6-2023)/images/Capture.PNG" alt="image">
+            <p class="p1">Short content.</p>
+            <div class="div4" >I have a footer!</div>
+        </div>
+        <div class="div3" style="position: absolute;left: 540px;"">
+            <h1>A longer heading in this card</h1>
+            <img src="/Tasks(20-6-2023)/images/2.PNG" alt="image">
+            <p class="p1">The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</p>
+            <div class="div4" >I have a footer!</div>
+        </div>
+    </div>
+</body>
+</html>
