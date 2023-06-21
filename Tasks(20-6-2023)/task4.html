@@ -6,13 +6,18 @@
     <title>Task4.html</title>
     <style>
         .div1{
-            position: relative;
+            position: static;
             border: dotted;
             width: 492px; height:100px;
             margin: 30px 30px 80px 30px;
         }
         .div2{
-            position: relative;
+            border: dotted;
+            width: 492px; height:100px;
+            margin: 30px 30px 80px 30px;
+        }
+        .div3{
+            position: absolute;
             border: dotted;
             width: 368px; height:100px;
             margin: 30px 30px 80px 30px;
@@ -36,15 +41,15 @@
         <div class="reddiv">Three</div>
         <div class="reddiv">Four</div>
     </div>
-    <div class="div1">
-        <div class="reddiv" style="position: static";>One</div>
-        <div class="greendiv" style="position: static; top: 20px;left: 150px;">Two</div>
-        <div class="reddiv"  style="position: static;">Three</div>
-        <div class="reddiv"  style="position: static">Four</div>
-    </div>
     <div class="div2">
         <div class="reddiv">One</div>
-        <div class="greendiv">Two</div>
+        <div class="greendiv" style="position: relative; top: 30px;left: 10px;">Two</div>
+        <div class="reddiv">Three</div>
+        <div class="reddiv">Four</div>
+    </div>
+    <div class="div3">
+        <div class="reddiv">One</div>
+        <div class="greendiv" style="position: absolute;top: 10px;left: 10px;">Two</div>
         <div class="reddiv">Three</div>
         <div class="reddiv">Four</div>
     </div>
