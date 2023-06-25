@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task1.css">
+    <style>
+        .green{
+    background-color: green;
+    width: 100%;
+}
+.aqua div{
+    background-color: aqua;}
+
+.gray div{
+    background-color: gray;}
+
+@media screen  and (max-width:480px) {
+    
+
+.green{
+    height: 120px;
+    margin-bottom: 7px;
+}
+.aqua{
+    display: grid;
+    grid-template-rows: repeat(3,150px);
+    row-gap: 5px;
+
+}
+.aqua3{
+    margin-bottom: 5px;
+}
+.gray{
+    display: grid;
+    grid-template-rows: repeat(4,75px);
+    row-gap: 5px;
+}
+
+}
+@media screen and (min-width: 481px) {
+    .green{
+        height: 200px;
+        margin-bottom: 9px;
+    }
+   .aqua{
+        display: grid;
+        grid-template-rows: repeat(3,100px);
+        row-gap: 5px;
+    }
+    .aqua3{
+        margin-bottom: 5px;
+    }
+    .gray{
+        display: grid;
+        grid-template-rows: repeat(2,75px);
+        grid-template-columns: repeat(2,auto);
+        row-gap: 5px;
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 768px){
+    .green{
+        height: 250px;
+        margin-bottom: 7px;}
+    .aqua{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 250px;
+           column-gap: 5px;
+}
+.aqua div{
+    margin-bottom: 5px;
+}
+.gray{
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: repeat(4,1fr);
+    
+    column-gap: 10px;
+}
+}
+    </style>
+ 
+</head>
+<body>
+    <div class="container">
+<div class="green"></div>
+<div class="aqua">
+<div class="aqua1"></div>
+ <div class="aqua2"></div>
+<div class="aqua3"></div>
+</div>
+<div class="gray">
+<div class="gray1"></div>
+<div class="gray2"></div>
+<div class="gray3"></div>
+ <div class="gray4"></div>
+</div>
+</div>
+
+</body>
+</html>

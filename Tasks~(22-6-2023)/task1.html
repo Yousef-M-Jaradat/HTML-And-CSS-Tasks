@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+       
+        .container{
+            margin: 20px;
+            display: grid;
+            gap:10px 0px;
+            width: 100%;
+        }
+        .green{
+            background-color: #b0d748;
+        }
+        
+        .blue{
+            background-color: #00c1d2;
+        }
+
+        .gray{
+            background-color: #e7eef0;
+        }
+
+        @media (max-width:414px){
+            .green{
+                height: 120px;
+            }
+            .blue{
+                display: grid;
+                grid-template-rows: 150px 150px 150px;
+                row-gap: 5px;
+            }
+            .gray{
+                height: 120px;
+            }
+        }
+        @media (min-width:413px) and (max-width:817px){
+            .green{
+                height: 150px;
+            }
+            .blue{
+                display: grid;
+                grid-template-rows: 150px 150px 150px;
+                row-gap: 5px;
+            }
+            .gray{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: 75px 75px;  
+                gap:5px 20px;              
+            }
+        }
+         @media (min-width:818px){
+            .green{
+                height: 275px;
+            }
+            .blue{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 275px;
+                column-gap: 20px;
+            }
+            .gray{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows:150px ;
+                column-gap: 10px;
+            }
+         } 
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="green"></div>
+        <div class="blue">
+        <div class="blue1"></div>
+        <div class="blue2"></div>
+        <div class="blue3"></div>
+        </div>
+        <div class="gray">
+            <div class="gray1"></div>
+            <div class="gray2"></div>
+            <div class="gray3"></div>
+            <div class="gray4"></div>
+        </div>
+    </div>
+</body>
+</html>

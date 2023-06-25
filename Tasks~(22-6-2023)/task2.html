@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        .container {
+            margin: 5px;
+            padding: 5px;
+        }
+        .blue{
+            background-color: #16d5ef;
+        }
+        .orange{
+            background-color: #ff7e47;
+        }
+        .orange > p{
+            margin: 10px;
+            background-color: white;
+        }
+        .gray > div{
+            background-color: #dfdfdf;
+        }
+        .green{
+            background-color: #2cda72;
+        }
+
+        @media(max-width:414px){
+            .blue{
+                height: 100px;
+                margin: 5px 0px;
+            }
+            .orange{
+                padding: 1px;
+            }
+            .orange > p{
+                display: block;
+                height: 25px;
+            }
+            .gray >div{
+                height: 50px;
+                margin: 5px 0px;
+            }
+            .green{
+                height: 100px;
+            }
+
+        }
+
+        @media(min-width:415px) and (max-width:745px){
+            .blue{
+                height: 100px;
+                margin: 5px 0px;
+            }
+            .orange {
+                display: grid;
+                grid-template-columns: repeat(4,auto);
+                grid-template-rows: 50px;
+                margin: 5px 0px;         
+           }
+            .gray{
+                display: grid;
+                grid-template-rows: repeat(5,75px);
+                row-gap: 5px;
+                
+            }
+            .green{
+                margin-top: 5px;
+                height: 100px;
+            }
+
+        }
+
+        @media(min-width:755px){
+            .blue{
+                height: 100px;
+                margin: 3px 0px;
+                width: 100%;
+            }  
+            .orange{
+                display: inline-block;
+                height: 550px;
+                width: 35%;
+            }
+            .orange > p{
+                height: 30px;
+            }
+            .gray{
+                display: inline-block;
+                height: 550px;
+                width: 48%;
+            }
+            .gray > div{
+                margin-bottom: 6px;
+                height: 105px;
+            }
+            .green{
+                display: inline-block;
+                height: 550px;
+                width: 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blue"></div>
+        <div class="orange">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="gray">
+            <div class="gray1"></div>
+            <div class="gray2"></div>
+            <div class="gray3"></div>
+            <div class="gray4"></div>
+            <div class="gray5"></div>
+        </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
