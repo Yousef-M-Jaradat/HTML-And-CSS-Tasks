@@ -7,14 +7,15 @@
     <style>
         #blue{
             width:100px; height:100px;
+            border: 3px solid red;
             background-color: blue; 
             transition-duration: 2s;
 
         }
-        #blue:hover{
+        #blue::after{
             transition-duration: 2s;
             width: 200px;
-            transition;
+            /* transition; */
         }
         #pink{
             width: 100px; height: 100px;
@@ -23,7 +24,7 @@
         }
         #pink:hover{
             transition-duration: 2s;
-            width: 200px;height: 200px;
+            width: 200px;height: 100px;
         }
     </style>
 </head>
